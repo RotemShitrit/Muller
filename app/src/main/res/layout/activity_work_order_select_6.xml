@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WorkOrderSelect_6">
+
+    <TextView
+        android:id="@+id/textViewID"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="303dp" />
+
+    <TextView
+        android:id="@+id/textViewSN"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="204dp" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="224dp"
+        android:layout_marginBottom="30dp"
+        android:text="Save" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:editable="false"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="textPersonName"
+        android:text="New Meter and Node Info" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="288dp"
+        android:layout_height="37dp"
+        android:layout_above="@+id/textViewSN"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="-204dp"
+        android:text="Latitude" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="282dp"
+        android:layout_height="38dp"
+        android:layout_above="@+id/textViewID"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="-303dp"
+        android:text="Longitude" />
+
+    <Button
+        android:id="@+id/buttonGetGPS"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="82dp"
+        android:layout_marginEnd="17dp"
+        android:text="Get GPS Coordinates" />
+
+
+</RelativeLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextRanManURL"
+        android:layout_alignEnd="@+id/editTextRanManURL"
+        android:layout_alignParentStart="true"
+        android:text="IP FTP"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/IP_FTP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView12"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:singleLine="true"
+        android:text="10.10.10.10"
+        android:textColorHighlight="@color/primary_material_dark"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/IP_FTP"
+        android:layout_alignEnd="@+id/editTextRanManURL"
+        android:layout_alignParentStart="true"
+        android:text="User FTP"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/USER_FTP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView13"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:text="admin"
+        android:textColorHighlight="@color/primary_material_dark"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/USER_FTP"
+        android:layout_alignEnd="@+id/editTextRanManURL"
+        android:layout_alignParentStart="true"
+        android:text="Password FTP"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/PASS_FTP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView14"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:text="admin"
+        android:textColorHighlight="@color/primary_material_dark"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PASS_FTP"
+        android:layout_alignEnd="@+id/editTextRanManURL"
+        android:layout_alignParentStart="true"
+        android:text="Port"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/PORT_FTP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView15"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:inputType="number"
+        android:singleLine="true"
+        android:text="10"
+        android:textColorHighlight="@color/primary_material_dark"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PORT_FTP"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="140dp"
+        android:text="Save"
+        android:textColor="@android:color/black" />
+
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonSave"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:text="Back"
+        android:textColor="@android:color/black" />
+
+</RelativeLayout>

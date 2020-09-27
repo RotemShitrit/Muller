@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.kp.meganet.meganetkp.ProgrammActivity"
+    android:background="@color/colorAccent">
+
+    <TextView
+        android:id="@+id/textViewDevice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Spinner
+        android:id="@+id/spinnerPromptTypes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewDevice"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/buttonSleep"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FLIGHT MODE"
+        android:id="@+id/buttonSleep"
+        android:textColor="@color/colorButtonText"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/spinnerPromptTypes"
+        android:visibility="invisible" />
+
+    <ListView
+        android:id="@+id/listViewParams"
+        android:layout_width="368dp"
+        android:layout_height="270dp"
+        android:layout_above="@+id/buttonPrompt"
+        android:layout_below="@+id/buttonSleep"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="39dp" />
+
+    <Button
+        android:id="@+id/buttonPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:text="READ"
+        android:textColor="@color/colorButtonText"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DISCONNECT"
+        android:id="@+id/buttonPowerOff"
+        android:textColor="@color/colorButtonText"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PROGRAM"
+        android:id="@+id/buttonProgramm"
+        android:textColor="@color/colorButtonText"
+        android:layout_alignTop="@+id/buttonPowerOff"
+        android:layout_alignEnd="@+id/listViewParams"
+        android:visibility="invisible" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerParam"
+        android:visibility="invisible"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/buttonSleep"
+        android:layout_alignBottom="@+id/buttonSleep"
+        android:layout_below="@+id/spinnerPromptTypes" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Parameter"
+        android:id="@+id/checkBoxParam"
+        android:visibility="invisible"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/spinnerPromptTypes"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/buttonSleep"
+        android:layout_alignBottom="@+id/buttonSleep" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextParam"
+        android:visibility="invisible"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/spinnerPromptTypes"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/buttonSleep"
+        android:layout_alignBottom="@+id/buttonSleep"
+        android:digits="0123456789."
+        android:inputType="number" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Prompt type"
+        android:id="@+id/textViewPromptType"
+        android:layout_below="@+id/textViewDevice"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:layout_above="@+id/checkBoxLock" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unlock"
+        android:id="@+id/checkBoxLock"
+        android:layout_below="@+id/textViewDevice"
+        android:layout_alignEnd="@+id/textViewDevice"
+        android:layout_above="@+id/buttonSleep"
+        android:layout_toEndOf="@+id/spinnerPromptTypes"
+        android:buttonTint="@color/colorButtonText"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/button_read_temp"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="65dp"
+        android:text="Read" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="368dp"
+        android:layout_height="178dp"
+        android:layout_above="@+id/listViewParams"
+        android:layout_below="@+id/button_read_temp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="-174dp"
+        android:text="Please Magnet Swipe Node"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+</RelativeLayout>

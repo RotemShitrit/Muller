@@ -1,0 +1,35 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".ProgrammActivity">
+
+    <item android:id="@+id/menu_pulse" android:title="@string/menu_pulse"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+    <item android:id="@+id/menu_program_field_verif" android:title="Field Verification"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/menu_program_ranman" android:title="RANMAN - Online RSSI"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/menu_program_read_meter" android:title="Read Meter"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/menu_program_rdm" android:title="RDM Control"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/menu_program_ftp" android:title="FTP"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/menu_program_getlog" android:title="Get Log"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/menu_program_settings" android:title="Settings"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+    <item android:id="@+id/menu_meter_protocol" android:title="@string/meter_protocol"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+    <item android:id="@+id/menu_qr_code" android:title="@string/str_qr_code"
+        android:orderInCategory="100" app:showAsAction="never" />
+</menu>
+
+
+
+
+
+
+

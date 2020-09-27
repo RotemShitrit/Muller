@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.kp.meganet.meganetkp.SettingsActivity"
+    android:background="@color/colorAccent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextHHID"
+        android:layout_alignEnd="@+id/editTextHHID"
+        android:layout_alignParentStart="true"
+        android:text="Set Field Verification 1 Frequency"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="13sp" />
+
+    <EditText
+        android:id="@+id/editTextReadMeterFreq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView7"
+        android:layout_alignEnd="@+id/textView7"
+        android:layout_alignParentStart="true"
+        android:digits="0123456789."
+        android:inputType="numberDecimal"
+        android:text="174.0"
+        android:textColorHighlight="@color/primary_material_dark"
+        android:textCursorDrawable="@drawable/cursor_drawable"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextFieldVerifFreq2"
+        android:layout_alignEnd="@+id/editTextFieldVerifFreq2"
+        android:layout_alignParentStart="true"
+        android:text="Set Read Meter Frequency"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="13sp" />
+
+    <EditText
+        android:id="@+id/editTextReadRDMFreq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:digits="0123456789."
+        android:inputType="numberDecimal"
+        android:text="173.0"
+        android:textColorHighlight="@color/primary_material_dark"
+        android:textCursorDrawable="@drawable/cursor_drawable"
+        android:textSize="11sp" />
+
+    <EditText
+        android:id="@+id/editTextRanManURL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView8"
+        android:layout_alignEnd="@+id/textView8"
+        android:layout_alignParentStart="true"
+        android:inputType="textWebEditText"
+        android:text="http://www.google.com"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editTextHHID"
+        android:layout_alignParentStart="true"
+        android:text="HH ID"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextFieldVerifFreq1"
+        android:layout_alignEnd="@+id/editTextFieldVerifFreq1"
+        android:layout_alignParentStart="true"
+        android:text="Set Field Verification 2 Frequency"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="13sp" />
+
+    <EditText
+        android:id="@+id/editTextHHID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:digits="0123456789"
+        android:inputType="number"
+        android:text="02233"
+        android:textColorHighlight="@color/primary_material_dark"
+        android:textCursorDrawable="@drawable/cursor_drawable"
+        android:textSize="11sp" />
+
+    <EditText
+        android:id="@+id/editTextFieldVerifFreq2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView6"
+        android:layout_alignEnd="@+id/textView6"
+        android:layout_alignParentStart="true"
+        android:digits="0123456789."
+        android:inputType="numberDecimal"
+        android:text="173.0"
+        android:textColorHighlight="@color/primary_material_dark"
+        android:textCursorDrawable="@drawable/cursor_drawable"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextReadMeterFreq"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:text="Set RDM Control Frequency"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextReadRDMFreq"
+        android:layout_alignEnd="@+id/editTextReadRDMFreq"
+        android:layout_alignParentStart="true"
+        android:text="RANMAN URL"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="13sp" />
+
+    <EditText
+        android:id="@+id/editTextFieldVerifFreq1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_alignEnd="@+id/textView5"
+        android:layout_alignParentStart="true"
+        android:digits="0123456789."
+        android:inputType="numberDecimal"
+        android:text="173.352"
+        android:textColorHighlight="@color/primary_material_dark"
+        android:textCursorDrawable="@drawable/cursor_drawable"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/textViewAppver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewRSNTver"
+        android:layout_alignParentEnd="true"
+        android:text="1.1"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/textViewRSNTver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/buttonApply"
+            android:layout_alignEnd="@+id/buttonApply"
+            android:text="1.08"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <Button
+            android:id="@+id/buttonApply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:text="SAVE AND CLOSE"
+            android:textColor="@color/colorButtonText" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/buttonApply"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/textViewRSNTver"
+            android:text="RSINT Version"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView"
+            android:layout_alignEnd="@+id/textView"
+            android:layout_alignParentStart="true"
+            android:text="Application Version"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <CheckBox
+            android:id="@+id/checkBoxKPACK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textViewAppver"
+            android:layout_alignEnd="@+id/textViewAppver"
+            android:layout_alignParentStart="true"
+            android:buttonTint="@color/colorButtonText"
+            android:text="Use KPACK"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="13sp" />
+
+
+</RelativeLayout>

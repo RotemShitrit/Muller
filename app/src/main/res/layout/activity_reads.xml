@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.kp.meganet.meganetkp.ReadsActivity"
+    android:background="@color/colorAccent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Receive All"
+        android:id="@+id/textViewFilter"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textViewFrequency"
+        android:layout_below="@+id/textViewFilter"
+        android:layout_alignParentStart="true"
+        android:textSize="24sp"
+        android:layout_toStartOf="@+id/checkBoxF1" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/buttonClearHistory"
+        android:layout_below="@+id/textViewFrequency">
+
+        <HorizontalScrollView
+            android:id="@+id/hscrll1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout1"
+                android:layout_width="fill_parent"
+                android:layout_gravity="center"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <TableLayout
+                    android:id="@+id/table_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true" >
+                </TableLayout>
+            </RelativeLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scan Listening MC&apos;s"
+        android:id="@+id/buttonScanListeningMCs"
+        android:layout_above="@+id/buttonClearHistory"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/colorButtonText"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear MC History"
+        android:id="@+id/buttonClearHistory"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/buttonScanListeningMCs"
+        android:textColor="@color/colorButtonText"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="START COLLECT"
+        android:id="@+id/buttonCollectReads"
+        android:textColor="@color/colorButtonText"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/buttonScanListeningMCs" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="F2"
+        android:id="@+id/checkBoxF2"
+        android:layout_below="@+id/textViewFilter"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/scrollView1"
+        android:buttonTint="@color/colorButtonText"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="F1"
+        android:id="@+id/checkBoxF1"
+        android:layout_below="@+id/textViewFilter"
+        android:layout_toStartOf="@+id/checkBoxF2"
+        android:layout_alignBottom="@+id/textViewFrequency"
+        android:buttonTint="@color/colorButtonText"
+        android:checked="true" />
+</RelativeLayout>

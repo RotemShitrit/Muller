@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_field_verif_1"
+            android:icon="@drawable/ic_field_verif"
+            android:title="Field Verification" />
+        <item
+            android:id="@+id/nav_rssi"
+            android:icon="@drawable/ic_ranman"
+            android:title="RANMAN – Online RSSI" />
+        <item
+            android:id="@+id/nav_read_meter"
+            android:icon="@drawable/ic_read_meter"
+            android:title="Read Meter" />
+        <item
+            android:id="@+id/nav_rdm"
+            android:icon="@drawable/ic_rdm"
+            android:title="RDM Control" />
+        <item
+            android:id="@+id/nav_orders"
+            android:icon="@drawable/ic_wo"
+            android:title="Work Order" />
+
+        <item
+            android:id="@+id/nav_log"
+            android:icon="@drawable/ic_history"
+            android:title="History Log" />
+    </group>
+
+    <item android:title="Advanced">
+        <menu>
+            <item
+                android:id="@+id/nav_ftp"
+                android:icon="@drawable/ic_ftp"
+                android:title="FTP" />
+            <item
+                android:id="@+id/nav_programm"
+                android:icon="@drawable/ic_program"
+                android:title="Program " />
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_settings"
+                android:title="Settings" />
+        </menu>
+    </item>
+
+</menu>

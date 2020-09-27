@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:editable="false"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="textPersonName"
+        android:text="Barcode Scan" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="92dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/textViewID"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="-89dp"
+        android:text="Node ID" />
+
+    <TextView
+        android:id="@+id/textViewID"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="89dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="298dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="212dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+
+        <TableLayout
+            android:id="@+id/table1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="0dp"
+            android:stretchColumns="0,1,2">
+
+        </TableLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/getLogBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="110dp"
+        android:text="Get Log" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="287dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView1"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="176dp"
+        android:layout_marginEnd="-229dp"
+        android:text="Choose an input number:"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/inputRadio"
+        android:layout_width="158dp"
+        android:layout_height="87dp"
+        android:layout_alignTop="@+id/textView16"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="62dp">
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@android:color/black"
+            android:checked="true"
+            android:onClick="checkButton"
+            android:text="Input 1" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@android:color/black"
+            android:onClick="checkButton"
+            android:text="Input 2" />
+
+
+    </RadioGroup>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="261dp"
+        android:layout_height="198dp"
+        android:progress="80"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="141dp" />
+
+</RelativeLayout>

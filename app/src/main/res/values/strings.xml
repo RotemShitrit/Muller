@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Mi.Net Licensed Mobile</string>
+    <string name="app_version">1.8</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_about">About</string>
+
+    <string-array name="types_array">
+        <item>E</item>
+        <item>MTWE</item>
+        <item>MTWP</item>
+        <item>MT1W</item>
+        <item>MTPIT</item>
+        <item>MT2W\\MT2PIT\\MC</item>
+    </string-array>
+
+    <string name="meter_protocol">Meter Protocol</string>
+
+    <string name="meter_protocol_value">
+
+        TYPE1- Amco/Elster\n
+        TYPE2- Neptune ARBV\n
+        TYPE3- Sensus\n
+        TYPE4- Neptune PRO\n
+        TYPE5- Severn Trent\n
+        TYPE6- Badger ADE\n
+        TYPE7- Elster - Nicor\n
+        TYPE8- Neptune PRO - Nicor\n
+        TYPE9- SSR
+    </string>
+
+    <string name="menu_pulse">Read Ports</string>
+    <string name="str_qr_code">QR Coede</string>
+    <string name="menu_filter">Filter</string>
+    <string name="menu_receive_mtu">Receive Specific MTU</string>
+    <string name="menu_receive_range_mtu">Receive a Range of IDs</string>
+    <string name="menu_receive_all">Receive All</string>
+    <string name="menu_receive_none">Receive None</string>
+    <string name="menu_receive_clear">Clear</string>
+    <string name="title_activity_qr_code">QrCodeActivity</string>
+    <string name="title_activity_programm_choose">ProgrammChoose</string>
+    <string name="title_activity_work_order_select_1">WorkOrderSelect_1</string>
+    <string name="title_activity_work_order_select_2">WorkOrderSelect_2</string>
+    <string name="title_activity_work_order_select_9">WorkOrderSelect_9</string>
+</resources>

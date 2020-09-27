@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PitActivity">
+
+    <Button
+        android:id="@+id/buttonScan5"
+        android:layout_width="330dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginBottom="22dp"
+        android:text="MT2PIT (10 dig) \n MN-P3x-xxxE-xx" />
+
+    <Button
+        android:id="@+id/buttonScan"
+        android:layout_width="330dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="274dp"
+        android:text="MTPIT \n MN-P1x-xxxx-xx" />
+
+    <Button
+        android:id="@+id/buttonScan3"
+        android:layout_width="330dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="159dp"
+        android:text="MT2PIT (8 dig) \n MN-P2x-xxxx-xx" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Pit" />
+
+
+</RelativeLayout>

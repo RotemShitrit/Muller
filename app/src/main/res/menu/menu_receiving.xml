@@ -1,0 +1,35 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".ReadsActivity">
+
+    <item android:id="@+id/menu_receive_ranman" android:title="RANMAN - Online RSSI"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/menu_receive_rdm" android:title="RDM Control"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/menu_receive_ftp" android:title="FTP"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/menu_receive_getlog" android:title="Get Log"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/menu_receive_program" android:title="Program"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/menu_receive_settings" android:title="Settings"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/menu_filter" android:title="@string/menu_filter"
+        android:orderInCategory="100" app:showAsAction="never"  >
+        <!-- "file" submenu -->
+
+        <menu>
+            <item android:id="@+id/menu_receive_mtu"
+                android:title="@string/menu_receive_mtu" />
+            <item android:id="@+id/menu_receive_range_mtu"
+                android:title="@string/menu_receive_range_mtu" />
+            <item android:id="@+id/menu_receive_all"
+                android:title="@string/menu_receive_all" />
+            <item android:id="@+id/menu_receive_none"
+                android:title="@string/menu_receive_none" />
+        </menu>
+    </item>
+    <item android:id="@+id/menu_receive_clear" android:title="Clear"
+        android:orderInCategory="100" app:showAsAction="never" />
+</menu>
+

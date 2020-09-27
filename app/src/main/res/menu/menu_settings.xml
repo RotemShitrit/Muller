@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".SettingsActivity">
+
+    <item android:id="@+id/menu_settings_field_verif" android:title="Field Verification"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/menu_settings_ranman" android:title="RANMAN - Online RSSI"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/menu_settings_read_meter" android:title="Read Meter"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/menu_settings_rdm" android:title="RDM Control"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/menu_settings_ftp" android:title="FTP"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/menu_settings_getlog" android:title="Get Log"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/menu_settings_program" android:title="Program"
+        android:orderInCategory="100" app:showAsAction="never" />
+</menu>
+
+
+
+
+
+
+

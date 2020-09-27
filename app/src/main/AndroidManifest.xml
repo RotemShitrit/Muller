@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kp.meganet.meganetkp">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/mobli_kp_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="Settings"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProgrammActivity"
+            android:label="Device Programming"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ReadsActivity"
+            android:label="RDM Controll"
+            android:screenOrientation="portrait" />
+        <activity android:name=".TestActivity" />
+        <activity
+            android:name=".PulseActivity"
+            android:label="Read Ports"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RDM_Controll"
+            android:label="RDM Controll"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FTP_Controll"
+            android:label="FTP Controll"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".History_Log_1"
+            android:label="History Log"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".History_Log_1_1"
+            android:label="History Log"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".History_Log_2"
+            android:label="History Log"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".History_Log_3"
+            android:label="History Log"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".History_Log_4"
+            android:label="History Log"
+            android:screenOrientation="portrait" />
+        <!--
+             ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".QrCodeActivity"
+            android:label="@string/title_activity_qr_code"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ProgrammChooseActivity" />
+        <activity android:name=".PitActivity" />
+        <activity android:name=".WallMountActivity" />
+
+        <activity android:name=".WorkOrderSelect_1"
+            android:label="Work Order"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".WorkOrderSelect_2"
+            android:label="Work Order"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".WorkOrderSelect_3"
+            android:label="Work Order"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".WorkOrderSelect_4"
+            android:label="Work Order"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".WorkOrderSelect_4_1"
+            android:label="Work Order"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".WorkOrderSelect_4_2"
+            android:label="Work Order"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".WorkOrderSelect_5"
+            android:label="Work Order"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".WorkOrderSelect_6"
+            android:label="Work Order"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".WorkOrderSelect_7"
+            android:label="Work Order"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".WorkOrderSelect_8"
+            android:label="Work Order"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".WorkOrderSelect_9"
+            android:label="Work Order"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

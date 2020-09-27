@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WorkOrderSelect_2">
+
+    <EditText
+        android:id="@+id/textViewRead"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="206dp"
+        android:inputType="number"
+        android:singleLine="true"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="163dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="197dp"
+        android:layout_marginBottom="60dp"
+        android:text="Save" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:editable="false"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="textPersonName"
+        android:text="Old Meter Info" />
+
+    <EditText
+        android:id="@+id/textViewSn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="105dp"
+        android:inputType="number"
+        android:singleLine="true"
+        android:text="0"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="94dp"
+        android:layout_height="34dp"
+        android:layout_above="@+id/textViewSn"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="-93dp"
+        android:text="Meter SN" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/textViewRead"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="-181dp"
+        android:text="Last Read" />
+
+
+</RelativeLayout>
